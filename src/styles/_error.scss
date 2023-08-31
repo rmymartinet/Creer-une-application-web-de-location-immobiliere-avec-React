@@ -1,0 +1,26 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error-container h1,
+.error-message,
+.link-error {
+  text-align: center;
+  color: #ff6060;
+}
+.error-container h1 {
+  margin-bottom: 140px;
+  font-size: 290px;
+}
+
+.error-container p {
+  margin-bottom: 140px;
+  font-size: 35px;
+}
+
+.link-error {
+  font-size: 18px;
+  margin-bottom: 140px;
+}

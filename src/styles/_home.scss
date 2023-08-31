@@ -1,0 +1,19 @@
+.home-content {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 60px 30px;
+  margin: 50px 60px;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+}
+
+@media screen and (max-width: 400px) {
+  .home-content {
+    margin-bottom: 15px;
+    padding: 0;
+    background: none;
+    gap: 0px;
+  }
+}

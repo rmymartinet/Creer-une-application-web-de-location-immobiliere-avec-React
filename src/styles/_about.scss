@@ -1,0 +1,160 @@
+@import "./variables/variables";
+@import "./placeholder.scss/placeholders";
+
+.banner {
+  margin-bottom: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1023px;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden; /* Ajoutez ceci pour masquer le contenu dépassant */
+  z-index: 10;
+  transition: 0.3s;
+}
+.about-box-expanded {
+  height: 200px; /* Permet au contenu de déterminer la hauteur */
+  /* Autres propriétés de style au besoin */
+}
+
+.reliability-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: $orange-main;
+  color: $txt-fond-clair;
+  font-size: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reliability-dropdown p {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.arrow-dropdown {
+  position: absolute;
+  right: 15px;
+  transition: 0.3s;
+}
+
+.reliability-dropdown.active .arrow-dropdown {
+  transform: rotate(-180deg);
+}
+
+.reliability-dropdown .about-dropdown-content {
+  position: absolute;
+  top: -300%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 65px;
+  transition: 0.3s;
+  padding-bottom: 30px;
+  background: #f6f6f6; /* Ajoutez ceci pour éviter de voir le fond rouge */
+  z-index: -10;
+  border-radius: 5px;
+  padding: 0 10px 35px 0px;
+}
+
+.reliability-dropdown .about-dropdown-content p {
+  position: relative;
+  display: flex;
+  font-size: 18px;
+  color: $orange-main;
+  font-weight: 400;
+  transition: 0.3s;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.reliability-dropdown.active .about-dropdown-content {
+  top: -7px;
+}
+
+@media screen and (max-width: 400px) {
+  .about-container {
+    width: 100%;
+  }
+  .about-dropdown-container {
+    width: 100%;
+  }
+
+  .box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    overflow: hidden; /* Ajoutez ceci pour masquer le contenu dépassant */
+    z-index: 10;
+    transition: 0.3s;
+  }
+  .about-box-expanded {
+    height: 170px; /* Permet au contenu de déterminer la hauteur */
+    /* Autres propriétés de style au besoin */
+  }
+
+  .reliability-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background: $orange-main;
+    color: $txt-fond-clair;
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .about-dropdown-content p {
+    position: absolute;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .reliability-dropdown p {
+    font-size: 13px;
+  }
+
+  .reliability-dropdown .about-dropdown-content {
+    position: absolute;
+    margin: 0;
+    top: -1000%;
+  }
+
+  .reliability-dropdown .about-dropdown-content p {
+    position: relative;
+    display: flex;
+    font-size: 12px;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-top: 35px;
+  }
+
+  .reliability-dropdown.active .about-dropdown-content {
+    top: 0px;
+  }
+
+  .arrow-dropdown {
+    width: 15px;
+    height: 10px;
+  }
+}

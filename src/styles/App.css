@@ -1,0 +1,13 @@
+.content-container {
+  margin: 0 60px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .content-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+  }
+}

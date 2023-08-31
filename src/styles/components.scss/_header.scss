@@ -1,0 +1,72 @@
+:root {
+  /* Colors */
+  --red: #ff6060;
+  --gray: #f6f6f6;
+
+  /* Fonts */
+
+  /* Effects */
+}
+
+nav {
+  margin: 45px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links .home-btn,
+.about-btn {
+  text-decoration: none;
+  color: var(--red);
+  font-size: 24px;
+}
+
+.nav-links .home-btn {
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav-links .home-btn,
+  .about-btn {
+    font-size: 12px;
+  }
+  .nav-links .home-btn {
+    margin-right: 30px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+  nav img {
+    width: 145px;
+    height: 45px;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header {
+    width: 100%;
+  }
+
+  nav {
+    margin: 20px 0;
+  }
+  nav img {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin: 0;
+  }
+}
