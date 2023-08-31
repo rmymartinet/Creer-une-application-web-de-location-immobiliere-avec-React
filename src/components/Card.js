@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
 import "../styles/components.scss/_card.scss";
 
 function Card({ title }) {

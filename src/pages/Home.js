@@ -8,9 +8,9 @@ import Banner from "../components/Banner.js";
 
 function Home() {
   return (
-    <section>
+    <section className="home-container">
+      <Banner />
       <div className="home-content ">
-        <Banner />
         {LogementsData.map((logement, index) => (
           <Link key={index} to={`/logements/${logement.title}`}>
             <Card title={logement.title} cover={logement.cover} />

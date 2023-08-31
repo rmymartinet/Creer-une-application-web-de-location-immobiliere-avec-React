@@ -1,13 +1,4 @@
-:root {
-  /* Colors */
-  --red: #ff6060;
-  --gray: #f6f6f6;
-
-  /* Fonts */
-
-  /* Effects */
-}
-
+@import "../variables/variables";
 nav {
   margin: 45px 0 50px 0;
   display: flex;
@@ -18,7 +9,7 @@ nav {
 .nav-links .home-btn,
 .about-btn {
   text-decoration: none;
-  color: var(--red);
+  color: $orange-main;
   font-size: 24px;
 }
 
@@ -26,33 +17,7 @@ nav {
   margin-right: 60px;
 }
 
-@media screen and (max-width: 400px) {
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-    width: 100%;
-  }
-
-  .nav-links .home-btn,
-  .about-btn {
-    font-size: 12px;
-  }
-  .nav-links .home-btn {
-    margin-right: 30px;
-  }
-
-  .nav-links {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-  }
-  nav img {
-    width: 145px;
-    height: 45px;
-    margin-left: 15px;
-  }
+@media screen and (min-width: 401) and (max-width: 768px) {
 }
 @media screen and (max-width: 400px) {
   header {
@@ -60,13 +25,31 @@ nav {
   }
 
   nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
     margin: 20px 0;
   }
   nav img {
+    width: 145px;
+    height: 45px;
     margin: 0;
+    margin-left: 15px;
   }
 
   .nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
     margin: 0;
+  }
+  .nav-links .home-btn,
+  .about-btn {
+    font-size: 12px;
+  }
+  .nav-links .home-btn {
+    margin-right: 30px;
   }
 }

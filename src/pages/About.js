@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/_about.scss";
 import "../styles/index.css";
-import Arrow from "../images/arrow.png";
+import Arrow from "../images/arrow.webp";
 import Collapse from "../components/Collapse.js";
 import Banner from "../components/Banner.js";
 
@@ -61,7 +61,7 @@ function About() {
         </p>
       ),
       arrowImage: Arrow,
-      style: { marginBottom: "0px" },
+      style: { marginBottom: "0" },
     },
   ];
 

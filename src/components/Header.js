@@ -1,5 +1,5 @@
 import React from "react";
-import kasaLogo from "../images/kasa_logo_header.png";
+import kasaLogo from "../images/kasa-logo-header.webp";
 import "../styles/components.scss/_header.scss";
 import { Link } from "react-router-dom";
 

@@ -13,19 +13,21 @@ import "./styles/App.css";
 function App() {
   return (
     <BrowserRouter>
-      <div className="content-container">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route
-            path="logements/:id"
-            element={<Logements data={LogementsData} />}
-          />
-          <Route path="*" element={<Error />} />
-        </Routes>
+      <div className="app-container">
+        <div className="content-container">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route
+              path="logements/:id"
+              element={<Logements data={LogementsData} />}
+            />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </BrowserRouter>
   );
 }

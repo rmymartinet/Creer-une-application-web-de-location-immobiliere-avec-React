@@ -1,3 +1,10 @@
+@import "./variables/variables";
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .home-content {
   justify-content: center;
   display: flex;
@@ -6,7 +13,7 @@
   padding: 60px 30px;
   margin: 50px 60px;
   border-radius: 25px;
-  background-color: #f6f6f6;
+  background-color: $background-gris;
 }
 
 @media screen and (max-width: 400px) {

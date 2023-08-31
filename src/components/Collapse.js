@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/components.scss/_collapse.scss";
 
 function Collapse({ sections, activeDropdowns, toggleDropdown, page }) {
   return (
@@ -31,7 +30,11 @@ function Collapse({ sections, activeDropdowns, toggleDropdown, page }) {
             }`}
             style={
               section.title === "Sécurité" && activeDropdowns[index]
-                ? { ...sections.style, marginBottom: "40px" }
+                ? {
+                    ...sections.style,
+                    marginBottom: "40px",
+                    ...(window.innerWidth <= 400 && { marginBottom: "20px" }),
+                  }
                 : section.style
             }
           >

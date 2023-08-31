@@ -1,3 +1,4 @@
+@import "../variables/variables";
 .banner {
   width: 100%;
   height: 220px;
@@ -12,10 +13,9 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color: black;
   font-size: 48px;
   width: 100%;
-  color: white;
+  color: $txt-fond-clair;
   text-align: center;
 }
 

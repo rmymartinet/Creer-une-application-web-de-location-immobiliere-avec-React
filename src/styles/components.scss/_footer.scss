@@ -1,3 +1,4 @@
+@import "../variables/variables";
 .footer-container {
   position: relative;
   bottom: 0;
@@ -8,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   height: 210px;
-  background-color: #000000;
-  color: white;
+  background-color: $background-noir;
+  color: $txt-fond-clair;
   gap: 30px;
 }

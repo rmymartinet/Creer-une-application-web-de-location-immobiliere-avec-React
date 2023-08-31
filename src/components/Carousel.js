@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "../styles/components.scss/_carousel.scss";
-// import LogementsData from "../datas/Logements-datas.js";
-// import { useParams } from "react-router-dom";
-// import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
-import ArrowLeft from "../images/arrow_carousel_left.png";
-import ArrowRight from "../images/arrow_carousel_right.png";
+import ArrowLeft from "../images/arrow-carousel-left.webp";
+import ArrowRight from "../images/arrow-carousel-right.webp";
 
 const Carousel = ({ data }) => {
   const [slide, setSlide] = useState(0);

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/components.scss/_logement.scss";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import arrow from "../images/arrow.png";
+import arrow from "../images/arrow.webp";
 import Carousel from "./Carousel.js";
 import Collapse from "./Collapse.js";
 
