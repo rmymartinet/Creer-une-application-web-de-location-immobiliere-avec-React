@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.392f4fd1.css",
+    "main.js": "/static/js/main.927caa79.js",
+    "static/media/mountains-banner.webp": "/static/media/mountains-banner.bdf47549b14c74cb0034.webp",
+    "static/media/sea-banner.webp": "/static/media/sea-banner.95f64a617ff3dd3826a4.webp",
+    "static/media/kasa-logo-header.webp": "/static/media/kasa-logo-header.464e3c7157a680bbde75.webp",
+    "index.html": "/index.html",
+    "static/media/kasa-logo-footer.webp": "/static/media/kasa-logo-footer.18ed68515f2fbe037962.webp",
+    "static/media/arrow-carousel-right.webp": "/static/media/arrow-carousel-right.0f7d49d00f849aaa2faf.webp",
+    "static/media/arrow-carousel-left.webp": "/static/media/arrow-carousel-left.8959156006def85be8f0.webp",
+    "static/media/arrow.webp": "/static/media/arrow.c6cf46d367c3e577e532.webp",
+    "main.392f4fd1.css.map": "/static/css/main.392f4fd1.css.map",
+    "main.927caa79.js.map": "/static/js/main.927caa79.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.392f4fd1.css",
+    "static/js/main.927caa79.js"
+  ]
+}

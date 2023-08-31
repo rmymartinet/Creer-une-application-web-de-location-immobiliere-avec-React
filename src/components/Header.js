@@ -7,12 +7,7 @@ function Header() {
   return (
     <header>
       <nav>
-        <img
-          src={kasaLogo}
-          alt="Logo du site immobilier Kasa"
-          width="210px"
-          height="68px"
-        ></img>
+        <img src={kasaLogo} alt="Logo du site immobilier Kasa"></img>
         <div className="nav-links">
           <Link to="/" className="home-btn">
             Accueil
