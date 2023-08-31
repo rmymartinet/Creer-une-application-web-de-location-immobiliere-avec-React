@@ -5,11 +5,11 @@ import Mountains from "../images/mountains-banner.webp";
 import "../styles/components.scss/_banner.scss";
 import "../styles/index.css";
 
-function Banner({ showMountains }) {
+function Banner({ imagemountain }) {
   const isMobile = (window.innerWidth = 400);
   return (
     <div className="banner">
-      {showMountains ? (
+      {imagemountain ? (
         <img src={Mountains} alt="paysage de montagnes"></img>
       ) : (
         <div className=" banner banner-content">
