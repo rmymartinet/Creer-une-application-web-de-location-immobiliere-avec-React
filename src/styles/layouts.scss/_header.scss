@@ -6,17 +6,24 @@ nav {
   align-items: center;
 }
 
+.nav-links {
+  display: flex;
+}
 .nav-links .home-btn,
-.about-btn {
+.nav-links .about-btn {
   text-decoration: none;
-  color: $orange-main;
   font-size: 24px;
+  color: $orange-main;
 }
 
 .nav-links .home-btn {
   margin-right: 60px;
 }
 
+.nav-links .home-btn.active,
+.nav-links .about-btn.active {
+  text-decoration: underline;
+}
 @media screen and (min-width: 401px) and (max-width: 768px) {
   header {
     width: 100%;

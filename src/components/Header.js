@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import kasaLogo from "../images/kasa-logo-header.webp";
 import "../styles/layouts.scss/_header.scss";
 import { Link } from "react-router-dom";
 
 function Header() {
+  const [activeButton, setActiveButton] = useState();
+
+  const handleButtonClick = (buttonName) => {
+    setActiveButton(buttonName);
+  };
   return (
     <header>
       <nav>
-        <img src={kasaLogo} alt="Logo du site immobilier Kasa"></img>
+        <Link to="/">
+          <img src={kasaLogo} alt="Logo du site immobilier Kasa"></img>
+        </Link>
         <div className="nav-links">
-          <Link to="/" className="home-btn">
+          <Link
+            to="/"
+            className={`home-btn ${activeButton === "Accueil" ? "active" : ""}`}
+            onClick={() => handleButtonClick("Accueil")}
+          >
             Accueil
           </Link>
-          <Link to="/about" className="about-btn">
+          <Link
+            to="/about"
+            className={`about-btn ${
+              activeButton === "A propos" ? "active" : ""
+            }`}
+            onClick={() => handleButtonClick("A propos")}
+          >
             A propos
           </Link>
         </div>
