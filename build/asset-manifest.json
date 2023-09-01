@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Kasa-react/static/css/main.ac0a5e5a.css",
+    "main.css": "/Kasa-react/static/css/main.1c5a9254.css",
     "main.js": "/Kasa-react/static/js/main.ac4c4bb9.js",
     "static/media/mountains-banner.webp": "/Kasa-react/static/media/mountains-banner.bdf47549b14c74cb0034.webp",
     "static/media/sea-banner.webp": "/Kasa-react/static/media/sea-banner.95f64a617ff3dd3826a4.webp",
@@ -10,11 +10,11 @@
     "static/media/arrow-carousel-right.webp": "/Kasa-react/static/media/arrow-carousel-right.0f7d49d00f849aaa2faf.webp",
     "static/media/arrow-carousel-left.webp": "/Kasa-react/static/media/arrow-carousel-left.8959156006def85be8f0.webp",
     "static/media/arrow.webp": "/Kasa-react/static/media/arrow.c6cf46d367c3e577e532.webp",
-    "main.ac0a5e5a.css.map": "/Kasa-react/static/css/main.ac0a5e5a.css.map",
+    "main.1c5a9254.css.map": "/Kasa-react/static/css/main.1c5a9254.css.map",
     "main.ac4c4bb9.js.map": "/Kasa-react/static/js/main.ac4c4bb9.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac0a5e5a.css",
+    "static/css/main.1c5a9254.css",
     "static/js/main.ac4c4bb9.js"
   ]
 }
