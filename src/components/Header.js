@@ -1,6 +1,6 @@
 import React from "react";
 import kasaLogo from "../images/kasa-logo-header.webp";
-import "../styles/components.scss/_header.scss";
+import "../styles/layouts.scss/_header.scss";
 import { Link } from "react-router-dom";
 
 function Header() {

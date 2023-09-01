@@ -6,3 +6,22 @@
   left: $left;
   transform: translate($x, $y);
 }
+
+@mixin absolute-el-top-left($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin absolute-el-left-bottom($left, $bottom) {
+  position: absolute;
+  left: $left;
+  bottom: $bottom;
+}
+
+@mixin absolute-el-top-left-translate($top, $left, $x, $y) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate($x, $y);
+}

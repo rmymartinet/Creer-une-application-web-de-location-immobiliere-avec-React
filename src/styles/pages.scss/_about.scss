@@ -1,15 +1,13 @@
-@import "./variables/variables";
-@import "./placeholder.scss/placeholders";
-
-.banner {
-  margin-bottom: 30px;
-}
+@import "../variables/variables";
+@import "../placeholder.scss/placeholders";
+@import "../mixins.scss/mixins";
 
 .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 40px;
 }
 
 .about-dropdown-container {
@@ -23,13 +21,12 @@
   position: relative;
   width: 100%;
   height: 100px;
-  overflow: hidden; /* Ajoutez ceci pour masquer le contenu dépassant */
+  overflow: hidden;
   z-index: 10;
   transition: 0.3s;
 }
 .about-box-expanded {
   height: 200px; /* Permet au contenu de déterminer la hauteur */
-  /* Autres propriétés de style au besoin */
 }
 
 .reliability-dropdown {
@@ -61,9 +58,7 @@
 }
 
 .reliability-dropdown .about-dropdown-content {
-  position: absolute;
-  top: -300%;
-  left: 0;
+  @include absolute-el-top-left(-300%, 0);
   width: 100%;
   height: auto;
   margin-top: 65px;
@@ -90,7 +85,7 @@
   top: -7px;
 }
 
-@media screen and (400px <= width <=768px) {
+@media screen and (min-width: 400px) and (max-width: 768px) {
   .about-container {
     width: 100%;
   }
@@ -157,7 +152,8 @@
     height: 10px;
   }
 }
-@media screen and (768px <= width <=1023px) {
+
+@media screen and (max-width: 400px) {
   .about-container {
     width: 100%;
   }
@@ -174,7 +170,7 @@
     transition: 0.3s;
   }
   .about-box-expanded {
-    height: 150px;
+    height: 170px;
   }
 
   .reliability-dropdown {
@@ -197,7 +193,7 @@
   }
 
   .reliability-dropdown p {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .reliability-dropdown .about-dropdown-content {
@@ -209,7 +205,7 @@
   .reliability-dropdown .about-dropdown-content p {
     position: relative;
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     transition: 0.3s;
     text-decoration: none;
     margin-top: 35px;
@@ -220,7 +216,7 @@
   }
 
   .arrow-dropdown {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 10px;
   }
 }

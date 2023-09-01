@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "../styles/_about.scss";
-import "../styles/index.css";
+import "../styles/pages.scss/_about.scss";
 import Arrow from "../images/arrow.webp";
 import Collapse from "../components/Collapse.js";
 import Banner from "../components/Banner.js";

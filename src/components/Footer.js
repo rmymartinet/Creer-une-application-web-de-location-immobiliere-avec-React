@@ -1,7 +1,6 @@
 import React from "react";
 import KasaLogoFooter from "../images/kasa-logo-footer.webp";
-import "../styles/components.scss/_footer.scss";
-import "../styles/index.css";
+import "../styles/layouts.scss/_footer.scss";
 
 function Footer() {
   return (

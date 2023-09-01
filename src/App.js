@@ -7,7 +7,7 @@ import Header from "./components/Header.js";
 import LogementsData from "./datas/Logements-datas.json";
 import Logements from "./components/Logements.js";
 import Footer from "./components/Footer.js";
-import "./styles/App.css";
+import "./styles/layouts.scss/_app.scss";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="Kasa-react/" element={<Home />} />
-            <Route path="Kasa-react/about" element={<About />} />
+            <Route path="/about" element={<About />} />
             <Route
               path="logements/:id"
               element={<Logements data={LogementsData} />}
@@ -30,5 +30,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;

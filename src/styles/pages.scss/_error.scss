@@ -1,0 +1,58 @@
+@import "../variables/variables";
+.error-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error-container h1,
+.error-message,
+.link-error {
+  text-align: center;
+  color: $orange-main;
+}
+.error-container h1 {
+  margin: 140px 0;
+  font-size: 290px;
+}
+
+.error-container p {
+  margin-bottom: 140px;
+  font-size: 35px;
+}
+
+.link-error {
+  margin-bottom: 140px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .error-container h1 {
+    margin: 133px 0;
+    font-size: 150px;
+  }
+  .error-container p {
+    margin-bottom: 113px;
+    font-size: 25px;
+  }
+
+  .link-error {
+    margin-bottom: 113px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .error-container h1 {
+    margin: 133px 0;
+    font-size: 96px;
+  }
+  .error-container p {
+    margin-bottom: 113px;
+    font-size: 18px;
+  }
+
+  .link-error {
+    margin-bottom: 113px;
+    font-size: 14px;
+  }
+}

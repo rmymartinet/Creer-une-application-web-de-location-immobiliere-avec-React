@@ -1,5 +1,7 @@
 @import "../variables/variables";
+@import "../mixins.scss/mixins";
 .banner {
+  position: relative;
   width: 100%;
   height: 220px;
 }
@@ -9,14 +11,12 @@
 }
 
 .banner-content p {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  @include absolute-el-top-left-translate(50%, 50%, -50%, -50%);
   font-size: 48px;
   width: 100%;
   color: $txt-fond-clair;
   text-align: center;
+  z-index: 10;
 }
 
 .banner img {
@@ -27,20 +27,34 @@
   filter: brightness(80%);
 }
 
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  .banner {
+    position: relative;
+    height: 170px;
+    width: 100%;
+  }
+  .banner-content p {
+    @include absolute-el-top-left(50%, 50%);
+    font-size: 36px;
+    width: 500px;
+    color: $txt-fond-clair;
+    text-align: center;
+    line-height: 40px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .banner {
+    margin: 0;
     position: relative;
     height: 110px;
     width: 100%;
   }
   .banner-content p {
-    position: absolute;
-    left: 40%;
-    top: 50%;
-    color: black;
+    @include absolute-el-top-left(50%, 40%);
     font-size: 24px;
     width: 217px;
-    color: white;
+    color: $txt-fond-clair;
     text-align: left;
     line-height: 20px;
   }

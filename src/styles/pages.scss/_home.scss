@@ -1,0 +1,41 @@
+@import "../variables/variables";
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-content {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  padding: 60px 30px;
+  margin: 40px 0px 50px 0;
+  border-radius: 25px;
+  background-color: $background-gris;
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  .home-container {
+    width: 100%;
+  }
+  .home-content {
+    margin: 30px 0;
+    gap: 20px;
+    background: $background-gris;
+    padding: 35px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-container {
+    width: 100%;
+  }
+  .home-content {
+    margin: 20px 0;
+    gap: 20px;
+    padding: 0;
+    background: none;
+  }
+}

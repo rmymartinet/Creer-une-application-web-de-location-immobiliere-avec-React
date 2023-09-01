@@ -2,8 +2,7 @@ import React from "react";
 import PropTypes from "prop-types"; // Importez PropTypes pour définir les types de prop
 import SeaBanner from "../images/sea-banner.webp";
 import Mountains from "../images/mountains-banner.webp";
-import "../styles/components.scss/_banner.scss";
-import "../styles/index.css";
+import "../styles/layouts.scss/_banner.scss";
 
 function Banner({ imagemountain }) {
   const isMobile = window.innerWidth <= 400;
