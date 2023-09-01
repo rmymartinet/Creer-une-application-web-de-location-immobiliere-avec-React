@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { useState } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Error from "./pages/Error.js";
@@ -17,8 +16,8 @@ function App() {
         <div className="content-container">
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
+            <Route path="Kasa-react/" element={<Home />} />
+            <Route path="Kasa-react/about" element={<About />} />
             <Route
               path="logements/:id"
               element={<Logements data={LogementsData} />}

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/components.scss/_card.scss";
 
-function Card({ title }) {
+function Card({ title, cover }) {
   const words = title.split(" ");
   const wordGroups = [];
 
@@ -31,7 +31,7 @@ function Card({ title }) {
           </p>
         </div>
       </div>
-      {/* <img src={cover} alt="" /> */}
+      {<img className="cover-cards" src={cover} alt="" />}
     </div>
   );
 }

@@ -6,18 +6,20 @@ import "../styles/components.scss/_banner.scss";
 import "../styles/index.css";
 
 function Banner({ imagemountain }) {
-  const isMobile = (window.innerWidth = 400);
+  const isMobile = window.innerWidth <= 400;
   return (
     <div className="banner">
       {imagemountain ? (
         <img src={Mountains} alt="paysage de montagnes"></img>
       ) : (
         <div className=" banner banner-content">
-          <img
-            rel="preload"
-            src={SeaBanner}
-            alt="paysage de cote, montagne et mer"
-          ></img>
+          {
+            <img
+              rel="preload"
+              src={SeaBanner}
+              alt="paysage de cote, montagne et mer"
+            ></img>
+          }
           <p>
             Chez vous,
             {isMobile ? <br /> : ""}partout et ailleurs
@@ -29,7 +31,7 @@ function Banner({ imagemountain }) {
 }
 
 Banner.propTypes = {
-  showMountains: PropTypes.bool.isRequired, // Assurez-vous que showMountains est bien un booléen
+  imagemountain: PropTypes.bool.isRequired,
 };
 
 export default Banner;

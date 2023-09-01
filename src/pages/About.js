@@ -67,7 +67,7 @@ function About() {
 
   return (
     <section className="about-container">
-      <Banner showMountains />
+      <Banner imagemountain />
       <Collapse
         sections={aboutSections}
         activeDropdowns={activeDropdowns}
