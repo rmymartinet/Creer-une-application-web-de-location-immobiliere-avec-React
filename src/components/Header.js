@@ -4,7 +4,7 @@ import "../styles/layouts.scss/_header.scss";
 import { Link } from "react-router-dom";
 
 function Header() {
-  const [activeButton, setActiveButton] = useState();
+  const [activeButton, setActiveButton] = useState([false, false]);
 
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);

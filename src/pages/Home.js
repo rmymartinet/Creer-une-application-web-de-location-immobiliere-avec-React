@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/pages.scss/_home.scss";
 import Card from "../components/Card";
-
 import LogementsData from "../datas/Logements-datas.json";
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner.js";

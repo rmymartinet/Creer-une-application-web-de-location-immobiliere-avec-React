@@ -20,7 +20,7 @@ const Carousel = ({ data }) => {
             key={index}
             src={item}
             alt=""
-            className={slide === index ? "slide" : "slide slide-hidden"}
+            className={slide === index ? "slide" : ""}
           />
         ))}
       </div>
@@ -55,13 +55,9 @@ const Carousel = ({ data }) => {
         {data.map((_, index) => {
           const indicatorText = `${index + 1}/${data.length}`;
           return (
-            <buton
-              key={index}
-              onClick={() => setSlide(index)}
-              className="indicator"
-            >
+            <p key={index} className="indicator">
               {slide === index ? indicatorText : ""}
-            </buton>
+            </p>
           );
         })}
       </span>

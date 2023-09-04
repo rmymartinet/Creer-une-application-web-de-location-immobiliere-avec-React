@@ -60,7 +60,7 @@ function Collapse({ sections, activeDropdowns, toggleDropdown, page }) {
                 }`}
               >
                 {section.content}
-              </div>{" "}
+              </div>
             </div>
           </div>
         ))}

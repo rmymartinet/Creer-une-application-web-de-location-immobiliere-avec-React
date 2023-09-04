@@ -9,6 +9,7 @@ function Card({ title, cover }) {
   for (let i = 0; i < words.length; i += 3) {
     const group = words.slice(i, i + 3).join(" ");
     wordGroups.push(group);
+    console.log(wordGroups);
   }
 
   const navigate = useNavigate();

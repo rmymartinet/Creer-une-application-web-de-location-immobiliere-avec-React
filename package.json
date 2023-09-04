@@ -13,9 +13,9 @@
     "react-icons": "^4.10.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.15.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
-    "sass": "^1.66.0",
+    "sass": "^1.66.1",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
@@ -24,6 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "scss": "npm run scss",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -47,7 +48,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^6.0.0",
-    "webpack-bundle-analyzer": "^4.9.1"
+    "gh-pages": "^6.0.0"
   }
 }
