@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "../components/Card";
+import Banner from "../components/Banner.js";
 import LogementsData from "../datas/Logements-datas.json";
 import { Link } from "react-router-dom";
-import Banner from "../components/Banner.js";
 
 function Home() {
   return (
