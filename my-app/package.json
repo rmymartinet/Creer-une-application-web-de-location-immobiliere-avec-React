@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "npm run scss",
+    "scss": "sass src/styles/main.scss src/styles/css/main.css",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

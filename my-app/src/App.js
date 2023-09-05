@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Error from "./pages/Error.js";
 import Header from "./components/Header.js";
 import LogementsData from "./datas/Logements-datas.json";
-import Logements from "./components/Logements.js";
+import Logements from "./pages/Logements.js";
 import Footer from "./components/Footer.js";
 import "./styles/css/main.css";
 function App() {

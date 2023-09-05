@@ -29,7 +29,7 @@ function Banner({ imagemountain }) {
 }
 
 Banner.propTypes = {
-  imagemountain: PropTypes.bool.isRequired,
+  imagemountain: PropTypes.bool,
 };
 
 export default Banner;

@@ -1,9 +1,8 @@
-import React from "react";
-import { useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import arrow from "../images/arrow.webp";
-import Carousel from "./Carousel.js";
-import Collapse from "./Collapse.js";
+import Carousel from "../components/Carousel.js";
+import Collapse from "../components/Collapse.js";
 
 function getStarsIcons(starCount, rating) {
   const stars = [];
@@ -17,9 +16,21 @@ function getStarsIcons(starCount, rating) {
 
 function Logements({ data }) {
   const { id } = useParams();
-  const selectedLogement = data.find((logement) => logement.title === id);
+  const selectedLogement = data.find((logement) =>
+    id.startsWith(logement.title)
+  );
 
+  const navigate = useNavigate();
   const [activeDropdowns, setActiveDropdowns] = useState([false, false]);
+  useEffect(() => {
+    if (!selectedLogement) {
+      navigate("/page-introuvable");
+    }
+  }, [selectedLogement, navigate]);
+
+  if (!selectedLogement) {
+    return null;
+  }
 
   const toggleDropdown = (index) => {
     const nouveauxDropdownsActifs = [...activeDropdowns];
