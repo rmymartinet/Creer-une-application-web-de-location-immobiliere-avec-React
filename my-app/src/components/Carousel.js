@@ -30,14 +30,14 @@ const Carousel = ({ data }) => {
       <img
         src={ArrowLeft}
         className="arrow arrow-left"
-        alt=""
+        alt="flèche de retour en arrière"
         onClick={prevSlide}
       />
       {data.map((item, index) => {
         return (
           <img
             src={item}
-            alt=""
+            alt="Photos des différentes parties du logement"
             key={index}
             className={slide === index ? "slide" : "slide slide-hidden"}
           />
@@ -46,7 +46,7 @@ const Carousel = ({ data }) => {
       <img
         src={ArrowRight}
         className="arrow arrow-right"
-        alt=""
+        alt="flèche de passage vers la prochaine slide"
         onClick={nextSlide}
       />
 

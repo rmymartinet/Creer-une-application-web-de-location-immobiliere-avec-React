@@ -8,6 +8,7 @@ import LogementsData from "./datas/Logements-datas.json";
 import Logements from "./pages/Logements.js";
 import Footer from "./components/Footer.js";
 import "./styles/css/main.css";
+
 function App() {
   return (
     <BrowserRouter>

@@ -30,7 +30,13 @@ function Card({ title, cover }) {
           </p>
         </div>
       </div>
-      {<img className="cover-cards" src={cover} alt="" />}
+      {
+        <img
+          className="cover-cards"
+          src={cover}
+          alt="Couverture de la carte qui montre le logement associé au titre"
+        />
+      }
     </div>
   );
 }

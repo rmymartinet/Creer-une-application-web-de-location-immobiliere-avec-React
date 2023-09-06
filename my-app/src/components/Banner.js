@@ -34,7 +34,7 @@ function Banner({ imagemountain }) {
           />
           <p>
             Chez vous,
-            {isMobile ? <br /> : " "}{" "}
+            {isMobile ? <br /> : " "}
             {/* Espace supplémentaire pour la lisibilité */}
             partout et ailleurs
           </p>
